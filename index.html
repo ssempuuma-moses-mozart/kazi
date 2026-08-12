@@ -462,6 +462,99 @@
     @media (max-width: 768px) {
       .service-block-img { margin-top: 24px; }
     }
+
+    /* --- Mobile Nav Fix --- */
+    @media (max-width: 1199px) {
+      .navmenu {
+        padding: 0;
+      }
+      .navmenu ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #1a1f3a;
+        flex-direction: column;
+        padding: 70px 20px 30px;
+        transition: 0.3s ease-in-out;
+        overflow-y: auto;
+        z-index: 9999;
+        box-shadow: 0 0 30px rgba(0,0,0,0.3);
+        list-style: none;
+        margin: 0;
+      }
+      .navmenu ul.show {
+        left: 0;
+      }
+      .navmenu ul li {
+        margin: 6px 0;
+      }
+      .navmenu ul li a {
+        color: rgba(255,255,255,0.8);
+        padding: 10px 16px;
+        display: block;
+        border-radius: 8px;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
+      .navmenu ul li a:hover,
+      .navmenu ul li a.active {
+        background: #6c2a9a;
+        color: #fff;
+      }
+      .navmenu ul li a::after {
+        display: none;
+      }
+      .mobile-nav-toggle {
+        display: block !important;
+        color: #fff;
+        font-size: 1.8rem;
+        cursor: pointer;
+        z-index: 10000;
+        position: relative;
+        line-height: 1;
+        padding: 4px 8px;
+        border-radius: 4px;
+        background: rgba(255,255,255,0.05);
+      }
+      .mobile-nav-toggle.bi-x {
+        color: #fff;
+      }
+    }
+    @media (min-width: 1200px) {
+      .mobile-nav-toggle {
+        display: none !important;
+      }
+      .navmenu ul {
+        display: flex !important;
+        position: static;
+        background: transparent;
+        flex-direction: row;
+        padding: 0;
+        width: auto;
+        height: auto;
+        box-shadow: none;
+        overflow: visible;
+      }
+      .navmenu ul li {
+        margin: 0 4px;
+      }
+      .navmenu ul li a {
+        color: rgba(255,255,255,0.8);
+        padding: 6px 12px;
+        border-bottom: none;
+        background: transparent !important;
+        border-radius: 0;
+      }
+      .navmenu ul li a:hover {
+        background: transparent !important;
+        color: #6c2a9a;
+      }
+    }
+    .mobile-nav-toggle {
+      display: none;
+    }
   </style>
 </head>
 
@@ -475,7 +568,7 @@
       </a>
 
       <nav id="navmenu" class="navmenu">
-        <ul>
+        <ul id="navMenuList">
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
@@ -484,7 +577,7 @@
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle bi bi-list" id="mobileNavToggle"></i>
       </nav>
 
       <a class="btn-getstarted" href="#contact">Get in Touch</a>
@@ -569,11 +662,6 @@
                 <p>We act with honesty, independence, and objectivity in all professional engagements.</p>
                 <div class="d-flex align-items-center mt-4"><i class="bi bi-check2" style="color: #6c2a9a; margin-right: 8px;"></i><h4 style="font-size:1.1rem;">Professional Excellence</h4></div>
                 <p>Upholding the highest standards of competence, ethics, technical rigor, and accountability.</p>
-
-                <!-- <div class="d-flex align-items-center mt-4"><i class="bi bi-check2" style="color: #6c2a9a; margin-right: 8px;"></i><h4 style="font-size:1.1rem;">Client Focus</h4></div>
-                <p>Practical, timely, and commercially relevant solutions aligned with clients' objectives.</p>
-                <div class="d-flex align-items-center mt-4"><i class="bi bi-check2" style="color: #6c2a9a; margin-right: 8px;"></i><h4 style="font-size:1.1rem;">Confidentiality</h4></div>
-                <p>We respect and protect client information at all times.</p> -->
               </div>
             </div>
           </div>
@@ -978,6 +1066,38 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Mobile Nav Toggle Script -->
+  <script>
+    (function() {
+      const toggle = document.getElementById('mobileNavToggle');
+      const menu = document.getElementById('navMenuList');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          menu.classList.toggle('show');
+          toggle.classList.toggle('bi-list');
+          toggle.classList.toggle('bi-x');
+        });
+        // Close menu when a link is clicked
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            menu.classList.remove('show');
+            toggle.classList.add('bi-list');
+            toggle.classList.remove('bi-x');
+          });
+        });
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+            menu.classList.remove('show');
+            toggle.classList.add('bi-list');
+            toggle.classList.remove('bi-x');
+          }
+        });
+      }
+    })();
+  </script>
 
 </body>
 
