@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kazi Valuers & Surveyors</title>
+  <meta name="description" content="Kazi Valuers and Surveyors – Professional real estate valuation and property advisory in Uganda. RICS qualified, SRB registered.">
+  <meta name="keywords" content="valuation, property, real estate, Uganda, RICS, SRB, advisory">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Kazi colour theme: deep navy #0b1a2b, purple #6c2a9a, light bg #f8faff */
+    body {
+      background-color: #ffffff;
+      color: #1e2b3a;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .section-title h2 {
+      color: #7E31A2;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 12px;
+    }
+    .section-title h2::after {
+      content: '◆ ◆ ◆';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -6px;
+      width: auto;
+      height: auto;
+      background: transparent;
+      color: #6c2a9a;
+      font-size: 0.7rem;
+      letter-spacing: 6px;
+      border-radius: 0;
+    }
+    .section-title h2 {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 20px;
+    }
+    .section-title h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #6c2a9a;
+      border-radius: 2px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title p {
+      color: #3b4c5e;
+      margin-top: 15px;
+    }
+    .light-background {
+      background-color: #f8faff;
+    }
+    .dark-background {
+      background-color: #0b1a2b;
+    }
+    .btn-getstarted {
+      background: #6c2a9a;
+      color: #fff;
+      border-radius: 50px;
+      padding: 10px 30px;
+      border: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .btn-getstarted:hover {
+      background: #55207a;
+      color: #fff;
+    }
+    .card-item {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      border: 1px solid #edf2f7;
+      height: 100%;
+      transition: 0.4s ease-in-out;
+    }
+    .card-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+      border-color: #6c2a9a;
+    }
+    .card-item span {
+      font-size: 2rem;
+      font-weight: 300;
+      color: #6c2a9a;
+      display: block;
+      margin-bottom: 8px;
+      transition: 0.3s;
+    }
+    .card-item:hover span {
+      transform: scale(1.1);
+    }
+    .card-item h4 {
+      color: #0b1a2b;
+      font-weight: 600;
+    }
+    .card-item p {
+      color: #4a5a6e;
+      font-size: 0.95rem;
+    }
+    .approach-step {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 24px 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+      border: 1px solid #edf2f7;
+      height: 100%;
+      transition: 0.4s ease-in-out;
+    }
+    .approach-step:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border-color: #6c2a9a;
+    }
+    .approach-step .step-number {
+      background: #6c2a9a;
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin-bottom: 12px;
+      transition: 0.3s;
+    }
+    .approach-step:hover .step-number {
+      background: #301F5B;
+      transform: rotate(360deg) scale(1.1);
+    }
+    .value-item {
+      border-left: 4px solid #6c2a9a;
+      padding-left: 18px;
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+    .value-item:hover {
+      border-left-color: #301F5B;
+      padding-left: 22px;
+    }
+    .value-item h5 {
+      font-weight: 600;
+      color: #0b1a2b;
+    }
+    .service-block-img {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      transition: 0.4s ease-in-out;
+    }
+    .service-block-img img {
+      transition: 0.6s ease-in-out;
+      width: 100%;
+      display: block;
+    }
+    .service-block-img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    }
+    .service-block-img:hover img {
+      transform: scale(1.05);
+    }
+    .stats-item {
+      text-align: center;
+      padding: 24px 12px;
+      background: #fff;
+      border-radius: 20px;
+      border: 1px solid #eef3f8;
+      transition: 0.4s ease-in-out;
+    }
+    .stats-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border-color: #6c2a9a;
+    }
+    .stats-item i {
+      font-size: 2.4rem;
+      color: #6c2a9a;
+      transition: 0.3s;
+    }
+    .stats-item:hover i {
+      transform: scale(1.2) rotate(5deg);
+      color: #301F5B;
+    }
+    .stats-item .purecounter {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0b1a2b;
+      display: block;
+    }
+    .footer {
+      background: #301F5B;
+      color: rgba(255,255,255,0.7);
+    }
+    .footer .sitename {
+      color: #fff;
+      font-weight: 600;
+    }
+    .footer a {
+      color: #6c2a9a;
+    }
+    .footer .social-links a {
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      margin-right: 8px;
+    }
+    .footer .social-links a:hover {
+      background: #6c2a9a;
+      color: #301F5B;
+      transform: translateY(-3px) scale(1.1);
+    }
+    .nav-pills .nav-link.active {
+      background: #6c2a9a;
+      color: #fff;
+    }
+    .nav-pills .nav-link {
+      color: #0b1a2b;
+      border-radius: 30px;
+      padding: 8px 24px;
+      transition: 0.3s;
+    }
+    .nav-pills .nav-link:hover {
+      background: #f0f0f0;
+      transform: translateY(-2px);
+    }
+    .hero .carousel-container h2 {
+      color: #fff;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .hero .carousel-container p {
+      color: rgba(255,255,255,0.9);
+    }
+    .accent-purple {
+      color: #6c2a9a;
+    }
+    .bg-navy {
+      background: #301F5B;
+    }
+    .text-navy {
+      color: #301F5B;
+    }
+    .border-purple {
+      border-color: #6c2a9a;
+    }
+    #header {
+      background: #301F5B;
+      backdrop-filter: blur(6px);
+      transition: 0.3s;
+    }
+    #header .logo img {
+      filter: brightness(0) invert(1);
+      height: 50px;
+      width: auto;
+      transition: 0.3s;
+    }
+    #header .logo img:hover {
+      transform: scale(1.05);
+    }
+    .navmenu a {
+      color: rgba(255,255,255,0.8);
+      transition: 0.3s;
+      position: relative;
+    }
+    .navmenu a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #6c2a9a;
+      transition: 0.3s;
+    }
+    .navmenu a:hover::after,
+    .navmenu .active::after {
+      width: 100%;
+    }
+    .navmenu a:hover, .navmenu .active {
+      color: #6c2a9a;
+    }
+    .btn-getstarted {
+      background: #6c2a9a;
+      color: #fff;
+      transition: 0.4s ease-in-out;
+    }
+    .btn-getstarted:hover {
+      background: #55207a;
+      color: #fff;
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(108, 42, 154, 0.3);
+    }
+    /* Member / Team card hover */
+    .member {
+      transition: 0.4s ease-in-out;
+    }
+    .member:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12) !important;
+      border-color: #6c2a9a !important;
+    }
+    .member img {
+      transition: 0.5s ease-in-out;
+    }
+    .member:hover img {
+      transform: scale(1.04);
+      border-color: #6c2a9a !important;
+    }
+    .member .social a {
+      transition: 0.3s;
+      background: #301F5B !important;
+      color: #fff !important;
+    }
+    .member .social a:hover {
+      transform: translateY(-3px) scale(1.1);
+      background: #6c2a9a !important;
+      color: #fff !important;
+    }
+    /* Contact cards hover */
+    .contact .col-lg-4 > div {
+      transition: 0.4s ease-in-out;
+    }
+    .contact .col-lg-4 > div:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08) !important;
+      border-color: #6c2a9a !important;
+    }
+    .contact .col-lg-4 > div:hover div:first-child {
+      transform: scale(1.05);
+    }
+    /* Who We Serve badges hover */
+    .card-item .gap-3 span {
+      transition: 0.3s ease-in-out;
+      cursor: default;
+    }
+    .card-item .gap-3 span:hover {
+      background: rgba(255,255,255,0.2) !important;
+      transform: translateY(-3px) scale(1.04);
+      border-color: #6c2a9a !important;
+    }
+    /* Scroll to top button */
+    .scroll-top {
+      transition: 0.3s;
+      background: #6c2a9a;
+      color: #fff;
+    }
+    .scroll-top:hover {
+      transform: translateY(-5px) scale(1.1);
+      background: #55207a !important;
+      color: #fff !important;
+    }
+    /* Registered business details border */
+    .border-purple-accent {
+      border-left-color: #6c2a9a !important;
+    }
+    /* Why Choose Us - custom cards */
+    .why-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      border: 1px solid #edf2f7;
+      height: 100%;
+      transition: 0.4s ease-in-out;
+      text-align: center;
+    }
+    .why-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+      border-color: #6c2a9a;
+    }
+    .why-card .icon-circle {
+      width: 70px;
+      height: 70px;
+      background: #6c2a9a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      transition: 0.3s;
+    }
+    .why-card:hover .icon-circle {
+      background: #301F5B;
+      transform: scale(1.1) rotate(5deg);
+    }
+    .why-card .icon-circle i {
+      font-size: 2rem;
+      color: #fff;
+    }
+    .why-card h4 {
+      color: #0b1a2b;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .why-card p {
+      color: #4a5a6e;
+      font-size: 0.92rem;
+      margin-bottom: 0;
+    }
+    /* Approach image section */
+    .approach-image-wrapper {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      transition: 0.4s ease-in-out;
+    }
+    .approach-image-wrapper:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    }
+    .approach-image-wrapper img {
+      width: 100%;
+      display: block;
+      transition: 0.6s ease-in-out;
+    }
+    .approach-image-wrapper:hover img {
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+      .service-block-img { margin-top: 24px; }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top" style="border-bottom: 4px solid #6c2a9a;">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/kazi/logo2rbg.png" alt="Kazi Valuers & Surveyors" style="height: 50px; width: auto; filter: brightness(0) invert(1);">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#whyus">Why Us</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#contact">Get in Touch</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-item active">
+          <img src="assets/img/kazi/hero1.png" alt="">
+          <div class="carousel-container">
+            <h2>Commitment, Professionalism</h2>
+            <p>Independent real estate valuation and property advisory — RICS qualified, SRB registered. Delivering reliable market insights that enable informed decisions.</p>
+            <a href="#about" class="btn-get-started">Learn More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/kazi/hero2.png" alt="">
+          <div class="carousel-container">
+            <h2>Standards-Driven Valuation</h2>
+            <p>In full compliance with International Valuation Standards (IVS) and RICS Valuation – Global Standards ("Red Book"), alongside Ugandan regulatory requirements.</p>
+            <a href="#services" class="btn-get-started">Our Services</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/kazi/v1.JPG" alt="">
+          <div class="carousel-container">
+            <h2>Expertise Across Asset Classes</h2>
+            <p>Residential, commercial, industrial, retail, hospitality, and agricultural properties. We serve private, corporate, financial, and public sector clients.</p>
+            <a href="#team" class="btn-get-started">Meet the Team</a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+        <ol class="carousel-indicators"></ol>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p style="text-align: justify;">Kazi Valuers &amp; Surveyors is a professional real estate valuation and property advisory firm led by a RICS-qualified Chartered Valuer, duly registered with the Surveyors Registration Board (SRB) of Uganda. We deliver independent, objective, and market-driven real estate valuation and advisory services in full compliance with internationally recognized standards, including the International Valuation Standards (IVS) and the RICS Valuation - Global Standards ("Red Book"), as well as all applicable Ugandan statutory and regulatory requirements. Our expertise extends to real estate feasibility studies and property management, covering a diverse range of asset classes such as residential, commercial, industrial, retail, hospitality, and agricultural properties. We serve a broad clientele that includes private individuals, corporate organizations, financial institutions, development partners, and public sector entities, supporting informed decision-making in investment, financing, and dispute resolution. All assignments are executed with strict adherence to professional ethics, independence, and rigorous quality control standards.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6">
+            <div class="about-img service-block-img">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="Kazi Valuers office">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="pt-0 pt-lg-5">Independent, objective, and market-driven real estate services</h3>
+            <ul class="nav nav-pills mb-3">
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#about-tab1">Vision</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab2">Mission</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab3">Values</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="about-tab1">
+                <p class="fst-italic">To be a trusted provider of high-quality real estate valuation and property advisory services, delivering reliable market insights that enable informed decisions and build confidence in the property market.</p>
+              </div>
+              <div class="tab-pane fade" id="about-tab2">
+                <p class="fst-italic">To provide independent, accurate and professional real estate valuation and property advisory services that consistently deliver client focused solutions while upholding the highest international standards of practice.</p>
+              </div>
+              <div class="tab-pane fade" id="about-tab3">
+                <p class="fst-italic">Our values are the foundation of everything we do.</p>
+                <div class="value-item"><h5>Integrity</h5><p>Honesty, independence, and objectivity in all engagements.</p></div>
+                <div class="value-item"><h5>Professional Excellence</h5><p>Competence, ethics, technical rigor, and accountability.</p></div>
+                <div class="value-item"><h5>Independence &amp; Client Focus</h5><p>Impartial, evidence-based opinions; practical solutions aligned with client goals.</p></div>
+
+                <div class="d-flex align-items-center mt-4"><i class="bi bi-check2" style="color: #6c2a9a; margin-right: 8px;"></i><h4 style="font-size:1.1rem;">Integrity &amp; Independence</h4></div>
+                <p>We act with honesty, independence, and objectivity in all professional engagements.</p>
+                <div class="d-flex align-items-center mt-4"><i class="bi bi-check2" style="color: #6c2a9a; margin-right: 8px;"></i><h4 style="font-size:1.1rem;">Professional Excellence</h4></div>
+                <p>Upholding the highest standards of competence, ethics, technical rigor, and accountability.</p>
+
+                <!-- <div class="d-flex align-items-center mt-4"><i class="bi bi-check2" style="color: #6c2a9a; margin-right: 8px;"></i><h4 style="font-size:1.1rem;">Client Focus</h4></div>
+                <p>Practical, timely, and commercially relevant solutions aligned with clients' objectives.</p>
+                <div class="d-flex align-items-center mt-4"><i class="bi bi-check2" style="color: #6c2a9a; margin-right: 8px;"></i><h4 style="font-size:1.1rem;">Confidentiality</h4></div>
+                <p>We respect and protect client information at all times.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Service Lines</h2>
+        <p>Delivered with independence, technical rigor, and a commitment to international standards.</p>
+      </div>
+
+      <div class="container">
+        <!-- Real Estate Valuation -->
+        <div class="row gy-5 align-items-center mb-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="service-block-img">
+              <img src="assets/img/kazi/realestatevaluation.JPG" class="img-fluid rounded-4" alt="Valuation">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h3 style="color:#0b1a2b;">Real Estate Valuation</h3>
+            <p style="text-align: justify;">Kazi delivers independent, comprehensive property valuation and advisory services tailored to meet the specific needs of every client. Our valuation expertise spans a wide range of asset classes, including residential, commercial, industrial, retail, hospitality, and agricultural properties. Each assignment is conducted using robust, market-based methodologies and supported by in-depth research and analysis to ensure accuracy and reliability. Our team applies internationally recognized standards, including the International Valuation Standards (IVS) and the RICS Valuation - Global Standards ("Red Book"), alongside relevant Ugandan regulatory requirements. This ensures that our reports are not only compliant but also credible and defensible. With our technical expertise, local market knowledge, and a commitment to independence, Kazi provides clients with clear, well-reasoned insights that support confident decision-making.</p>
+          </div>
+        </div>
+
+        <!-- Agency Services -->
+        <div class="row gy-5 align-items-center mb-5 flex-row-reverse">
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="service-block-img">
+              <img src="assets/img/portfolio/product-1.jpg" class="img-fluid rounded-4" alt="Agency">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-right">
+            <h3 style="color:#0b1a2b;">Agency Services</h3>
+            <p style="text-align: justify;">We provide professional agency services across residential, commercial, and retail property sectors, delivering tailored solutions that align with our clients' objectives. Acting in our clients' best interests, we ensure a seamless and transparent transaction process from initial engagement through to completion. Our services include strategic property marketing and targeted exposure, buyer and tenant sourcing, skilled negotiation support, and coordination of due diligence processes. We also offer continuous advisory support throughout the transaction lifecycle, ensuring informed decision-making at every stage.</p>
+          </div>
+        </div>
+
+        <!-- Market Research and Advisory -->
+        <div class="row gy-5 align-items-center mb-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="service-block-img">
+              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid rounded-4" alt="Research">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h3 style="color:#0b1a2b;">Market Research and Advisory</h3>
+            <p style="text-align: justify;">We provide market research and advisory services which support informed real estate investment and development decisions. Our insights are grounded in rigorous analysis, local market knowledge, and a clear understanding of evolving industry trends. Our services include market feasibility studies, highest and best use analysis and demand and supply assessments. Through comprehensive research and data-driven insights, we help clients understand market dynamics, demand drivers, absorption trends, and competitive positioning enabling well-informed, strategic decision-making in the property sector.</p>
+          </div>
+        </div>
+
+        <!-- Property Management -->
+        <div class="row gy-5 align-items-center flex-row-reverse mb-5">
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="service-block-img">
+              <img src="assets/img/kazi/aq1.jpg" class="img-fluid rounded-4" alt="Property Management">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-right">
+            <h3 style="color:#0b1a2b;">Property Management</h3>
+            <p style="text-align: justify;">We deliver comprehensive property management services for residential, retail, and commercial assets, ensuring efficient operations and sustained asset performance. Our approach is proactive and client-focused, designed to optimize income, maintain property condition, and enhance long-term value. Our services include rent collection and administration, tenant liaison and relationship management, lease administration and renewals, and coordination of maintenance and repairs. We also provide ongoing asset performance monitoring and reporting to support informed decision-making. Through a structured and professional management approach, we aim to preserve asset value, maximize returns, and ensure the smooth day-to-day operation of our clients' properties.</p>
+          </div>
+        </div>
+
+      <!-- Purposes Of Valuation -->
+      <div class="row gy-5 align-items-center mb-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="service-block-img">
+            <img src="assets/img/kazi/aq.jpg" class="img-fluid rounded-4" alt="Purposes of Valuation">
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <h3 style="color:#0b1a2b;">Purposes of Valuation</h3>
+          <p style="text-align: justify; margin-bottom: 15px;">We undertake valuations for a wide range of purposes, including:</p>
+          <ul style="list-style: none; padding-left: 0; margin-bottom: 0;">
+            <li style="padding: 6px 0; display: flex; align-items: flex-start; gap: 10px; border-bottom: 1px solid rgba(0,0,0,0.05);">
+              <i class="bi bi-check-circle-fill" style="color: #6c2a9a; font-size: 1rem; margin-top: 2px; flex-shrink: 0;"></i>
+              <span style="color: #2f4053; font-size: 0.95rem;">Secured lending and mortgage financing</span>
+            </li>
+            <li style="padding: 6px 0; display: flex; align-items: flex-start; gap: 10px; border-bottom: 1px solid rgba(0,0,0,0.05);">
+              <i class="bi bi-check-circle-fill" style="color: #6c2a9a; font-size: 1rem; margin-top: 2px; flex-shrink: 0;"></i>
+              <span style="color: #2f4053; font-size: 0.95rem;">Financial reporting in compliance with IFRS 13</span>
+            </li>
+            <li style="padding: 6px 0; display: flex; align-items: flex-start; gap: 10px; border-bottom: 1px solid rgba(0,0,0,0.05);">
+              <i class="bi bi-check-circle-fill" style="color: #6c2a9a; font-size: 1rem; margin-top: 2px; flex-shrink: 0;"></i>
+              <span style="color: #2f4053; font-size: 0.95rem;">Sale and purchase</span>
+            </li>
+            <li style="padding: 6px 0; display: flex; align-items: flex-start; gap: 10px; border-bottom: 1px solid rgba(0,0,0,0.05);">
+              <i class="bi bi-check-circle-fill" style="color: #6c2a9a; font-size: 1rem; margin-top: 2px; flex-shrink: 0;"></i>
+              <span style="color: #2f4053; font-size: 0.95rem;">Insurance purposes</span>
+            </li>
+            <li style="padding: 6px 0; display: flex; align-items: flex-start; gap: 10px;">
+              <i class="bi bi-check-circle-fill" style="color: #6c2a9a; font-size: 1rem; margin-top: 2px; flex-shrink: 0;"></i>
+              <span style="color: #2f4053; font-size: 0.95rem;">Litigation</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      </div>
+    </section><!-- /Services Section -->
+
+    <!-- Why Choose Us Section -->
+    <section id="whyus" class="why-us section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Why Choose Us</h2>
+        <p>Independent, standards-driven, and client-focused.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-card">
+              <div class="icon-circle"><i class="bi bi-trophy"></i></div>
+              <h4>LED BY EXPERTISE</h4>
+              <p>Headed by a RICS Chartered Valuer registered with the Surveyors Registration Board (SRB), ensuring professional credibility and technical excellence.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="why-card">
+              <div class="icon-circle"><i class="bi bi-shield-check"></i></div>
+              <h4>INDEPENDENT AND OBJECTIVE ADVICE</h4>
+              <p>Delivering impartial, standards-driven valuation and advisory services in line with international best practices.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="why-card">
+              <div class="icon-circle"><i class="bi bi-building"></i></div>
+              <h4>DIVERSE PROPERTY EXPERIENCE</h4>
+              <p>We bring extensive expertise across residential, commercial, industrial, retail, and agricultural sectors, delivering comprehensive insights and solutions for diverse asset types.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="why-card">
+              <div class="icon-circle"><i class="bi bi-graph-up-arrow"></i></div>
+              <h4>MARKET INTELLIGENCE</h4>
+              <p>We leverage deep local market expertise alongside internationally recognized methodologies. Our understanding of the market ensures that every recommendation is both relevant and strategically informed, empowering our clients to make confident, data-driven decisions.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="why-card">
+              <div class="icon-circle"><i class="bi bi-person-heart"></i></div>
+              <h4>CLIENT-CENTRIC SERVICE</h4>
+              <p>We are committed to timely, reliable, and responsive service tailored to meet client needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Why Choose Us -->
+
+    <!-- Work Approach Section -->
+    <section id="approach" class="approach section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Work Approach</h2>
+        <p>Delivering excellence through a structured and professional process.</p>
+      </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="approach-step">
+              <div class="step-number">1</div>
+              <h5>Client Consultation</h5>
+              <p>We start by engaging with our clients to fully understand their objectives, scope of work, property specifics, and the purpose of the valuation. This ensures clarity and alignment from the very beginning.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="approach-step">
+              <div class="step-number">2</div>
+              <h5>Property Inspection</h5>
+              <p>A thorough on-site inspection is conducted to assess the property's location, condition, improvements, accessibility, and the surrounding environment, providing a solid foundation for accurate valuation.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="approach-step">
+              <div class="step-number">3</div>
+              <h5>Market Research</h5>
+              <p>We collect and analyze relevant market data, including recent transactions, comparable properties, rental trends, economic indicators, and sector-specific performance metrics, to inform our assessment.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="approach-step">
+              <div class="step-number">4</div>
+              <h5>Data Analysis</h5>
+              <p>Leveraging established valuation methodologies, we evaluate all gathered information to determine the most accurate and defensible market value of the property.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="approach-step">
+              <div class="step-number">5</div>
+              <h5>Valuation Reporting</h5>
+              <p>A comprehensive and professionally prepared report is delivered, detailing assumptions, methodology, analysis, and our final opinion of value, ensuring transparency and reliability for our clients.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Valuation Methods Image -->
+        <!-- <div class="row mt-5" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-12">
+            <div class="approach-image-wrapper">
+              <img src="assets/img/kazi/ric.JPG" alt="Valuation Methods - The Comparable Transaction Method, The Investment Method, The Residual Method, The Profits Method, The Depreciated Replacement Cost Method">
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section><!-- /Work Approach -->
+
+    <!-- Who We Serve -->
+    <section class="section light-background">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card-item text-center p-5" style="background: linear-gradient(135deg, #301F5B 0%, #1a3350 100%); border-radius: 20px; box-shadow: 0 8px 32px rgba(11, 26, 43, 0.15);">
+              <h4 style="color: #ffffff; font-weight: 300; letter-spacing: 1px; margin-bottom: 8px;">WHO WE SERVE</h4>
+              <div style="width: 60px; height: 3px; background: #6c2a9a; margin: 12px auto 20px;"></div>
+              <p style="color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 20px; max-width: 700px; margin-left: auto; margin-right: auto;">Our clients include:</p>
+              <div class="d-flex flex-wrap justify-content-center gap-3 mt-2">
+                <span style="background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); color: #ffffff; padding: 10px 24px; border-radius: 50px; font-weight: 400; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.06); transition: 0.3s; cursor: default;">Commercial banks and financial institutions</span>
+                <span style="background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); color: #ffffff; padding: 10px 24px; border-radius: 50px; font-weight: 400; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.06); transition: 0.3s; cursor: default;">Institutional investors and fund managers</span>
+                <span style="background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); color: #ffffff; padding: 10px 24px; border-radius: 50px; font-weight: 400; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.06); transition: 0.3s; cursor: default;">Property developers</span>
+                <span style="background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); color: #ffffff; padding: 10px 24px; border-radius: 50px; font-weight: 400; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.06); transition: 0.3s; cursor: default;">Corporate entities</span>
+                <span style="background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); color: #ffffff; padding: 10px 24px; border-radius: 50px; font-weight: 400; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.06); transition: 0.3s; cursor: default;">Government and semi-government bodies</span>
+                <span style="background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); color: #ffffff; padding: 10px 24px; border-radius: 50px; font-weight: 400; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.06); transition: 0.3s; cursor: default;">Private individuals</span>
+                <span style="background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); color: #ffffff; padding: 10px 24px; border-radius: 50px; font-weight: 400; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.06); transition: 0.3s; cursor: default;">Legal practitioners and courts</span>
+              </div>
+              <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-top: 24px; max-width: 700px; margin-left: auto; margin-right: auto; font-style: italic;">Our professional insights enable clients to make informed investment, lending, development, and strategic decisions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Team</h2>
+        <p>Meet our experienced professionals.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member" style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.06); padding: 24px; text-align: center; border: 1px solid #edf2f7;">
+              <img src="assets/img/kazi/angella.JPG" class="img-fluid rounded-circle" style="width: 180px; height: 180px; object-fit: cover; margin: 0 auto 16px; display: block; border: 4px solid #f0f4fa;" alt="Angella Nuwagaba">
+              <h4 style="margin-bottom: 4px; color: #0b1a2b;">Angella Nuwagaba</h4>
+              <span style="color: #6c2a9a; font-weight: 500; display: block; margin-bottom: 12px;">MRICS, RSU · Proprietor</span>
+              <p style="text-align: justify; font-size: 0.95rem; color: #2f4053;">Angella is a Chartered Surveyor and Registered Valuer in Uganda with over 15 years of experience in real estate development and advisory. She previously worked with Knight Frank Uganda, a leading international property firm, and has spent the past 14 years in Uganda contributing across a wide range of real estate, construction, and management roles. Having successfully led and managed large teams throughout her career, Angella founded Kazi Valuers and Surveyors in 2025 to deliver independent, standards-driven valuation and advisory services to clients in Uganda and the broader regional market.</p>
+              <div class="social" style="margin-top: 12px;">
+                <a href="mailto:angella.nuwagaba@kazivaluersandsurveyors.co.ug" style="background: #301F5B; color: #fff; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s;"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member" style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.06); padding: 24px; text-align: center; border: 1px solid #edf2f7;">
+              <img src="assets/img/kazi/bruce.JPG" class="img-fluid rounded-circle" style="width: 180px; height: 180px; object-fit: cover; margin: 0 auto 16px; display: block; border: 4px solid #f0f4fa;" alt="Bruce Tumusiime">
+              <h4 style="margin-bottom: 4px; color: #0b1a2b;">Bruce Tumusiime</h4>
+              <span style="color: #6c2a9a; font-weight: 500; display: block; margin-bottom: 12px;">AssocRICS · Valuer</span>
+              <p style="text-align: justify; font-size: 0.95rem; color: #2f4053;">Bruce, formerly with Knight Frank Uganda, is an Associate Member of the Royal Institution of Chartered Surveyors (AssocRICS) with more than 4 years of professional experience in the valuation of commercial, residential, and industrial properties. With a background spanning both property management and valuation, he has developed strong expertise in delivering accurate market insights and providing well-reasoned, dependable valuation advice.</p>
+              <div class="social" style="margin-top: 12px;">
+                <a href="mailto:bruce.tumusiime@kazivaluersandsurveyors.co.ug" style="background: #301F5B; color: #fff; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s;"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Get in touch with us for professional valuation and advisory services.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+          
+          <!-- Address Card -->
+          <div class="col-lg-4">
+            <div style="background: #ffffff; border-radius: 20px; padding: 32px 24px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.04); border: 1px solid #edf2f7; height: 100%; transition: 0.4s ease-in-out;">
+              <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #301F5B, #1a3350); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; transition: 0.3s;">
+                <i class="bi bi-geo-alt" style="font-size: 1.8rem; color: #6c2a9a;"></i>
+              </div>
+              <h3 style="font-size: 1.1rem; font-weight: 600; color: #0b1a2b; margin-bottom: 8px;">Address</h3>
+              <p style="color: #4a5a6e; margin: 0; font-size: 0.95rem; line-height: 1.6;">Plot 14 Nakasero Road, Jocasa House, Nakasero, Kampala, Uganda</p>
+            </div>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="col-lg-4">
+            <div style="background: #ffffff; border-radius: 20px; padding: 32px 24px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.04); border: 1px solid #edf2f7; height: 100%; transition: 0.4s ease-in-out;">
+              <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #301F5B, #1a3350); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; transition: 0.3s;">
+                <i class="bi bi-telephone" style="font-size: 1.8rem; color: #6c2a9a;"></i>
+              </div>
+              <h3 style="font-size: 1.1rem; font-weight: 600; color: #0b1a2b; margin-bottom: 8px;">Call Us</h3>
+              <p style="color: #4a5a6e; margin: 0; font-size: 0.95rem; font-weight: 500;">+256 782 840 211</p>
+              <p style="color: #7a8a9e; margin: 4px 0 0; font-size: 0.85rem;">Bruce: +256 704 716 781</p>
+            </div>
+          </div>
+
+          <!-- Email Card -->
+          <div class="col-lg-4">
+            <div style="background: #ffffff; border-radius: 20px; padding: 32px 24px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.04); border: 1px solid #edf2f7; height: 100%; transition: 0.4s ease-in-out;">
+              <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #301F5B, #1a3350); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; transition: 0.3s;">
+                <i class="bi bi-envelope" style="font-size: 1.8rem; color: #6c2a9a;"></i>
+              </div>
+              <h3 style="font-size: 1.1rem; font-weight: 600; color: #0b1a2b; margin-bottom: 8px;">Email</h3>
+              <p style="color: #4a5a6e; margin: 0; font-size: 0.9rem; word-break: break-word;">angella.nuwagaba@kazivaluersandsurveyors.co.ug</p>
+              <p style="color: #7a8a9e; margin: 4px 0 0; font-size: 0.85rem;">info@kvsuganda.com</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Registered Business Details -->
+        <div class="row mt-4">
+          <div class="col-lg-12">
+            <div style="background: linear-gradient(135deg, #f8faff 0%, #eef4f9 100%); border-radius: 20px; padding: 32px 40px; border-left: 6px solid #6c2a9a; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: 0.3s;">
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                <i class="bi bi-building" style="font-size: 1.8rem; color: #6c2a9a;"></i>
+                <h5 style="margin: 0; font-weight: 600; color: #0b1a2b; letter-spacing: -0.3px;">Registered Business Details</h5>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px 32px;">
+                <div>
+                  <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #7a8a9e; font-weight: 600;">Business Name</span>
+                  <p style="font-weight: 500; color: #0b1a2b; margin: 2px 0 0;">Kazi Valuers and Surveyors</p>
+                </div>
+                <div>
+                  <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #7a8a9e; font-weight: 600;">Registration No.</span>
+                  <p style="font-weight: 500; color: #0b1a2b; margin: 2px 0 0;">80030814534505</p>
+                </div>
+                <div>
+                  <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #7a8a9e; font-weight: 600;">Established</span>
+                  <p style="font-weight: 500; color: #0b1a2b; margin: 2px 0 0;">November 2025</p>
+                </div>
+                <div>
+                  <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #7a8a9e; font-weight: 600;">Website</span>
+                  <p style="font-weight: 500; color: #0b1a2b; margin: 2px 0 0;">www.kazivaluersandsurveyors.co.ug</p>
+                </div>
+                <div>
+                  <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #7a8a9e; font-weight: 600;">Postal Address</span>
+                  <p style="font-weight: 500; color: #0b1a2b; margin: 2px 0 0;">Kampala, Uganda</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center"><span class="sitename">Kazi Valuers</span></a>
+          <div class="footer-contact pt-3">
+            <p>Plot 14 Nakasero Road, Jocasa House</p><p>Nakasero, Kampala, Uganda</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+256 782 840 211</span></p>
+            <p><strong>Email:</strong> <span>angella.nuwagaba@kazivaluersandsurveyors.co.ug</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul><li><a href="#hero">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#team">Team</a></li></ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Services</h4>
+          <ul><li><a href="#services">Valuation</a></li><li><a href="#services">Agency</a></li><li><a href="#services">Research</a></li><li><a href="#services">Property Management</a></li></ul>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Commitment, Quality &amp; Professionalism</h4>
+          <p>Registered Business Address: Plot 14 Nakasero Road, Kampala, Uganda</p>
+          <p class="small">Registration No. 80030814534505</p>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Kazi Valuers &amp; Surveyors</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">Designed by <a href="#">Kazi Valuers & Surveyors</a></div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
